@@ -30,6 +30,9 @@ for x in words:
             if x[t] in vowels:
                 pigout += ((x[t:]) + (x[0:t]) + "ay ")
                 break
+            else:
+                pigout += x + "ay "
+                break
     else:
         for t in range(1,len(x)):
             if x[t] in vowels:
