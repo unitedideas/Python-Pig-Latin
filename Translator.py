@@ -26,9 +26,9 @@ for x in words:
     if len(x) == 1:
         pigout += x + "ay "
     elif x.startswith(vowels):
-        for t in range(0,len(x)):
+        for t in range(1,len(x)):
             if x[t] in vowels:
-                pigout += ((x[t:]) + (x[-1:t]) + "ay ")
+                pigout += ((x[t:]) + (x[0:t]) + "ay ")
                 break
     else:
         for t in range(1,len(x)):
